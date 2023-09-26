@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          First Deployment using Jenkins
+          First Deployment using Jenkins.
         </a>
       </header>
     </div>
