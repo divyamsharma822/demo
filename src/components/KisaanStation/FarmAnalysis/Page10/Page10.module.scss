@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.Page10 {
+    height: 297mm;
+    width: 210mm;
+    border: 1px solid rgb(139, 139, 139);
+    padding: 40px;
+    background-color: white;
+
+    @media print {
+        page-break-after: always;
+    }
+
+    .heading {
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-decoration: solid underline #1c6817 5px;
+        font-weight: 600;
+        text-underline-offset: 10px;
+        margin-bottom: 40px;
+        
+    }
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+.login::-webkit-scrollbar {
+    display: none;
+}
+
+.login {
+    background-image: url("../../assets/loginbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Poppins;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+
+    .header {
+        padding-left: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media (max-width: 570px) {
+            padding: 0%;
+            gap: 1rem;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .img {
+            background-color: white;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        .headerText {
+            margin-left: 1rem;
+            font-size: calc(0.75em + 1vw);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+
+            @media (max-width: 570px) {
+                margin: 0%;
+            }
+        }
+    }
+    .formwrapper {
+        display: flex;
+
+        .form {
+            padding: 2rem 3rem;
+            font-size: calc(0.7em + 1vmin);
+            top: 50%;
+            gap: 2rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #563e1f5b;
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            height: fit-content;
+            width: 32vmax;
+
+            @media (max-width: 768px) {
+                width: 40vmax;
+            }
+
+            .h1 {
+                text-align: left;
+                color: white;
+            }
+            .labelPadding {
+                gap: 0.5rem;
+                display: flex;
+                flex-direction: column;
+            }
+            .errorlabel {
+                font-size: 0.8rem;
+                color: rgb(203, 210, 109);
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .input {
+                color: gray;
+                border-radius: 8px;
+                border: none;
+                width: 100%;
+                height: 5vh;
+                // margin-top: 0.5rem;
+                padding: 1rem;
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+            .eye {
+                background-color: white;
+                border-radius: 8px;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                color: black;
+            }
+            .eyeicon {
+                margin-right: 1rem;
+                color: gray;
+                font-size: 1.3em;
+            }
+
+            .forget {
+                text-align: right !important;
+            }
+
+            .submitbutton {
+                border-radius: 20px;
+                width: 100%;
+                margin-bottom: 2rem;
+                height: 5vh;
+                align-self: center;
+                border: none;
+                color: white;
+                font-weight: 600;
+                background-color: rgb(226, 107, 52);
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}
+
+// .formwrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .form {
+//         padding: 1rem;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         display: flex;
+//         position: absolute;
+//         justify-content: center;
+//         flex-direction: column;
+//         align-items: center;
+//         background-color: #563e1f5b;
+//         backdrop-filter: blur(10px);
+//         width: 30vw;
+//         height: fit-content;
+//     }
+// }

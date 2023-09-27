@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.Page1 {
+    height: 297mm;
+    width: 210mm;
+    border: 2px solid rgb(139, 139, 139);
+    margin: 0;
+    padding: 50px 30px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    background-image: url("../../../../assests/anaysisReport_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+
+    @media print {
+        page-break-after: always;
+    }
+    .heading {
+        font-weight: 600;
+        font-size: 40px;
+        margin: 60px 0 20px 0;
+    }
+
+    .subheading {
+        color: #838383;
+        font-size: 18px;
+    }
+    .logos {
+        margin: 40px 0;
+    }
+    .centerContent {
+        border: 2px solid #cccccc;
+        background-color: white;
+        border-radius: 20px;
+        width: 87%;
+        margin-top: 50px;
+        overflow: hidden;
+
+        .top {
+            border-bottom: 2px solid #cccccc;
+            padding: 30px;
+
+            .topheading {
+                color: #1c6817;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .date {
+                font-weight: 500;
+                white-space: pre;
+            }
+        }
+
+        .bottom {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .left {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .right {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}

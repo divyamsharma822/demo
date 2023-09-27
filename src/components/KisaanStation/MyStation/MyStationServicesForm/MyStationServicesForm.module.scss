@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.MyStationServicesForm {
+    font-family: Poppins;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 14px;
+
+    @media (min-width: 1960px) {
+        font-size: calc(20px + 0.4vw);
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+    @media (max-width: 576px) {
+        font-size: 10px;
+    }
+
+    .header {
+        margin: 2em;
+
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
+
+        .h1 {
+            font-size: 1.4em;
+            @media (max-width: 768px) {
+                text-align: center;
+                width: 100%;
+                padding-bottom: 1em;
+            }
+        }
+        .buttons {
+            justify-content: right;
+            flex-grow: 1;
+            height: fit-content;
+            font-size: 1em;
+            @media (max-width: 768px) {
+                justify-content: center;
+                flex: 1;
+                font-size: 1.1em;
+            }
+
+            .reset {
+                width: fit-content;
+                // min-width: 100px;
+                padding: 0.3em 0.5em;
+                border-radius: 5px;
+                border: 1.5px solid rgb(106, 106, 106);
+                background-color: white;
+                color: rgb(106, 106, 106);
+                &:hover {
+                    transform: scale(0.95);
+                }
+                @media (max-width: 576px) {
+                    flex: 0.5;
+                }
+            }
+            .save {
+                width: fit-content;
+                // min-width: 100px;
+                padding: 0 0.5em;
+                border-radius: 5px;
+                border: 1.5px solid rgb(226, 109, 53);
+                background-color: rgb(226, 109, 53);
+                color: rgb(255, 255, 255);
+                &:hover {
+                    transform: scale(0.95);
+                }
+                @media (max-width: 576px) {
+                    flex: 0.5;
+                }
+            }
+        }
+    }
+
+    .hr {
+        width: 100%;
+        border: 1px solid rgba(197, 197, 197, 0.465);
+    }
+
+    .tagcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 5px;
+        color: black;
+        padding: 0.5em;
+    }
+
+    .tagcontainer input {
+        width: min-content;
+        display: flex;
+        font-size: 0.9em;
+        flex-wrap: wrap;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5em;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+    .tag {
+        padding: 0.2em 0.5em;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        border: 1px solid rgb(237, 237, 237);
+        border-radius: 5px;
+        background-color: rgb(237, 237, 237);
+        white-space: nowrap;
+        color: rgb(15, 15, 15);
+    }
+
+    .tag button {
+        display: flex;
+        padding-left: 0.5rem;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+
+    .heading {
+        color: rgb(226, 109, 53);
+        font-weight: 500;
+        padding: 0.3em 0;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .subheading {
+        font-weight: 500;
+        padding: 0.5em 0;
+        font-size: 1.2em;
+        color: black;
+    }
+    .input,
+    .textarea {
+        font-size: 0.8em;
+        padding: 1em 0.5em;
+        border-radius: 8px;
+        color: rgb(125, 125, 125);
+        border: 1px solid rgb(198, 198, 198);
+        resize: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    .addbtn {
+        background: none;
+        color: rgb(226, 109, 53);
+        font-weight: 500;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+    .bg {
+        background-color: rgba(248, 248, 248);
+        padding: 1em;
+        border-radius: 8px;
+
+        .bginput {
+            font-size: 0.8em;
+            padding: 1em;
+            border-radius: 8px;
+            color: rgb(125, 125, 125);
+            resize: none;
+            border: none;
+            border: 1px solid rgba(125, 125, 125, 0.393);
+
+            &:focus {
+                outline: none;
+            }
+            @media (max-width: 768px) {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .err {
+        color: red;
+        &::before {
+            content: "\26A0"+"  ";
+        }
+    }
+}

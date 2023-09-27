@@ -1,0 +1,610 @@
+// .LeavesPopup {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   width: 100vw;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   position: absolute;
+//   z-index: 5;
+//   font-size: 16px;
+
+// @media (min-width: 1960px) {
+//   font-size: 16px;
+// }
+// @media (max-width: 1440px) {
+//   font-size: 14px;
+// }
+// @media (max-width: 768px) {
+//   font-size: 13px;
+// }
+// @media (max-width: 576px) {
+//   font-size: 12px;
+// }
+
+//   .LeavesPopup_modal {
+//     background: white;
+//     border: 1px solid black;
+//     border-radius: 16px;
+//     padding: 60px;
+//     background-color: rgb(248, 249, 250);
+//     margin: 1em;
+//     height: auto;
+//     @media (max-width: 376px) {
+//       font-size: 10px;
+//       background: white;
+//       border: 1px solid black;
+//       border-radius: 16px;
+//       // padding: 60px;
+//       background-color: rgb(248, 249, 250);
+//       margin: 1em;
+//       height: auto;
+//       width: auto;
+//     }
+//     .removePopup {
+//       display: flex;
+//       justify-content: flex-end;
+//       cursor: pointer;
+//       font-size: 2em;
+//     }
+//     .userTitle {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       margin-bottom: 10px;
+//       @media (max-width: 678px) {
+//         font-size: 12px;
+//       }
+//       @media (max-width: 376px) {
+//         font-size: 12px;
+//       }
+//       .userTitle_heading {
+//         display: flex;
+//         align-items: center;
+//       }
+//       .userName {
+//         margin-right: 10px;
+//         color: #276b9c;
+//         font-weight: 600;
+//         font-size: 2em;
+//       }
+//       .userId {
+//         font-size: 1em;
+//       }
+//     }
+//     .department {
+//       display: flex;
+//       justify-content: space-between;
+//       font-size: 1em;
+//       .designation {
+//         color: #5c5c5c;
+//       }
+//       .date {
+//         color: #5c5c5c;
+//       }
+//     }
+
+//     .leaveReason {
+//       display: flex;
+//       justify-content: space-between;
+//       //   padding-top: 30px;
+//       margin-top: 40px;
+//       font-size: 1em;
+//       .leavetype {
+//         display: flex;
+//         align-items: center;
+//         .leavetypeTitle {
+//           color: #276b9c;
+//         }
+//         .leavetypeReason {
+//           color: #5c5c5c;
+//         }
+//       }
+//       .numberOfDay {
+//         color: #5c5c5c;
+//       }
+
+//       .numberOfDay {
+//         display: flex;
+//         align-items: center;
+
+//         .numberOfDay {
+//           color: #276b9c;
+//         }
+//         .numberOfDay_Day {
+//           color: #5c5c5c;
+//         }
+//       }
+//     }
+
+//     .request {
+//       display: flex;
+//       margin-top: 20px;
+//       font-size: 1em;
+//       .requestDate {
+//         color: #276b9c;
+//       }
+//       .date {
+//         color: #5c5c5c;
+//       }
+//     }
+
+//     .reasonForLeave {
+//       display: flex;
+//       margin-top: 20px;
+//       align-items: center;
+//       .reason {
+//         color: #276b9c;
+//       }
+//       .reason_text {
+//         color: #5c5c5c;
+//       }
+//     }
+
+//     .leavesSection {
+//       font-size: 16px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       margin-top: 40px;
+//       background-color: white;
+//       text-align: start;
+//       height: 116px;
+//       @media screen and (max-width: 678px) {
+//         font-size: 12px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         margin-top: 20px;
+//         background-color: white;
+//         text-align: start;
+//         height: auto;
+//       }
+//       .totalLeaves {
+//         color: #276b9c;
+//         font-weight: 450;
+//         padding-left: 60px;
+//         padding-right: 150px;
+//         border-right: 1px solid #5c5c5c;
+//         @media screen and (max-width: 678px) {
+//           color: #276b9c;
+//           font-weight: 450;
+//           padding-left: 30px;
+//           padding-right: 100px;
+//           border-right: 1px solid #5c5c5c;
+//         }
+//         .sickContainer {
+//           display: flex;
+//           align-items: center;
+//           font-size: 12px;
+//           .sick {
+//             color: #5c5c5c;
+//           }
+//           .sickLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//         .casualContainer {
+//           font-size: 12px;
+//           display: flex;
+//           align-items: center;
+//           .casual {
+//             color: #5c5c5c;
+//           }
+//           .CasualLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//         .WorkFromHomeContainer {
+//           font-size: 12px;
+//           display: flex;
+//           align-items: center;
+//           .WorkFromHome {
+//             color: #5c5c5c;
+//           }
+//           .WorkFromHomeLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//       }
+//       .availableLeaves {
+//         color: #276b9c;
+//         font-weight: 450;
+//         font-size: 16px;
+//         padding-right: 112px;
+//         @media screen and (max-width: 678px) {
+//           color: #276b9c;
+//           font-weight: 450;
+//           padding-left: 30px;
+//           padding-right: 100px;
+//         }
+//         .sickContainer {
+//           font-size: 12px;
+//           display: flex;
+//           align-items: center;
+
+//           .sick {
+//             color: #5c5c5c;
+//           }
+//           .sickLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//         .casualContainer {
+//           font-size: 12px;
+//           display: flex;
+//           align-items: center;
+//           .casual {
+//             color: #5c5c5c;
+//           }
+//           .CasualLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//         .WorkFromHomeContainer {
+//           font-size: 12px;
+//           display: flex;
+//           align-items: center;
+//           .WorkFromHome {
+//             color: #5c5c5c;
+//           }
+//           .WorkFromHomeLeavesDays {
+//             color: #276b9c;
+//           }
+//         }
+//       }
+//     }
+//     .buttonSection {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       text-align: center;
+//       margin-top: 30px;
+//       button {
+//         margin: 20px;
+//         border-radius: 60px;
+//         padding: 8px;
+//         width: 139px;
+//       }
+//       .Approve {
+//         background-color: #257062;
+//         color: white;
+//       }
+//       .Reject {
+//         border: 2px solid red;
+//       }
+//     }
+//   }
+// }
+
+.LeavesPopup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 5;
+  @media (max-width: 320px) {
+    display: flex;
+    align-items: flex-start;
+  }
+  .LeavesPopup_modal {
+    background: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 2em;
+    background-color: rgb(248, 249, 250);
+    margin: 1em;
+    width: 56em;
+    @media (max-width: 320px) {
+      margin: 5em;
+    }
+    .userTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      .userTitle_heading {
+        display: flex;
+        align-items: center;
+        @media (max-width: 1024px) and (min-width: 320px) {
+          display: flex;
+          align-items: center;
+        }
+        @media (max-width: 480px) {
+          font-size: 1em;
+        }
+        .userName {
+          margin-right: 10px;
+          color: #276b9c;
+          font-weight: 600;
+          font-size: 1.3em;
+          @media (max-width: 320px) {
+            font-size: 1em;
+          }
+          .userId {
+            font-size: 1em;
+            @media (max-width: 320px) {
+              font-size: 3em;
+            }
+          }
+        }
+      }
+    }
+    .department {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1em;
+      .designation {
+        color: #5c5c5c;
+      }
+      .date {
+        color: #276b9c;
+        font-size: 1em;
+        font-weight: 500;
+      }
+    }
+
+    .leaveReason {
+      display: flex;
+      justify-content: space-between;
+      //   padding-top: 30px;
+      margin-top: 3em;
+      font-size: 1em;
+
+      .leavetype {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 320px) {
+          font-size: 0.9em;
+        }
+        .leavetypeTitle {
+          color: #276b9c;
+          @media (max-width: 320px) {
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+        .leavetypeReason {
+          color: #5c5c5c;
+        }
+      }
+      .numberDay {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 320px) {
+          font-size: 0.9em;
+          font-weight: 500;
+        }
+        .numberOfDay {
+          color: #276b9c;
+          @media screen and (max-width: 320px) {
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+        .numberOfDay_Day {
+          color: #5c5c5c;
+        }
+      }
+    }
+    .request {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 1em;
+      .requestDate {
+        color: #276b9c;
+        @media (max-width: 320px) {
+          font-size: 1em;
+          font-weight: 500;
+        }
+      }
+      .date {
+        font-size: 1em;
+        color: #5c5c5c;
+        @media (max-width: 320px) {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .reasonForLeave {
+      display: flex;
+      margin-top: 1em;
+      align-items: center;
+      .reason {
+        color: #276b9c;
+        @media (max-width: 320px) {
+          font-size: 1em;
+          font-weight: 500;
+        }
+      }
+      .reason_text {
+        @media (max-width: 320px) {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .leavesSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 2em;
+      background-color: white;
+      padding: 1em;
+
+      @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        padding-left: 1em;
+        align-items: flex-start;
+      }
+      .totalLeaves {
+        width: 50%;
+        border-right: 2px solid rgba(173, 155, 119, 0.4);
+        padding-left: 3em;
+        @media (max-width: 320px) {
+          border-right: none;
+          width: auto;
+        }
+        .totalLeavesTitle {
+          color: #276b9c;
+          @media (max-width: 320px) {
+            font-size: 1.2em;
+            font-weight: 500;
+            border-right: none;
+          }
+        }
+        .sickContainer {
+          display: flex;
+          align-items: center;
+
+          .sick {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .sickLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .casualContainer {
+          display: flex;
+          align-items: center;
+          .casual {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .CasualLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .WorkFromHomeContainer {
+          display: flex;
+          align-items: center;
+          .WorkFromHome {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .WorkFromHomeLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+      .availableLeaves {
+        width: 50%;
+
+        padding-left: 60px;
+        @media (max-width: 320px) {
+          padding-left: 32px;
+          width: auto;
+        }
+        .availableLeavesTitle {
+          color: #276b9c;
+          @media (max-width: 320px) {
+            font-size: 1.2em;
+            font-weight: 500;
+          }
+        }
+        .sickContainer {
+          display: flex;
+          align-items: center;
+          .sick {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .sickLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .casualContainer {
+          display: flex;
+          align-items: center;
+          .casual {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .CasualLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .WorkFromHomeContainer {
+          display: flex;
+          align-items: center;
+          .WorkFromHome {
+            color: #5c5c5c;
+            @media (max-width: 320px) {
+              font-size: 1em;
+              font-weight: 400;
+            }
+          }
+          .WorkFromHomeLeavesDays {
+            color: #276b9c;
+            @media (max-width: 320px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+    .buttonSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      // margin-top: 1em;
+      button {
+        margin: 2em;
+        border-radius: 6em;
+        padding: 0.5em;
+        width: 6em;
+      }
+      .Approve {
+        background-color: #257062;
+        color: white;
+      }
+      .Reject {
+        border: 2px solid red;
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.Section2 {
+    margin: 2em;
+
+    .header {
+        display: flex;
+        align-items: center;
+
+        .heading {
+            font-family: "Poppins", sans-serif;
+            color: #e26b26;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            border: 1px solid #626262;
+            color: #434343;
+            border-radius: 0.3em;
+            font-size: 1.2em;
+            padding: 0.3em 1em;
+
+            &:disabled {
+                border: 1px solid #626262;
+                color: #626262;
+                cursor: wait;
+            }
+
+            &:hover {
+                background-color: #6060602d;
+            }
+
+            .svg {
+                color: #434343;
+            }
+        }
+
+        .save {
+            border: none;
+            background-color: #e26b26;
+            color: #ffffff;
+
+            &:hover {
+                background-color: #e26b26;
+            }
+            .svg {
+                color: #ffffff;
+            }
+        }
+
+        .cancel {
+            border: none;
+            color: #626262;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #6060602d;
+            }
+            .svg {
+                color: #e26b26;
+            }
+        }
+    }
+
+    .formWrapper {
+        margin-top: 2em;
+        .space {
+            margin: 1em 0;
+        }
+
+        .inputComponent {
+            margin: 0.5em 0;
+            .label {
+                font-size: 1em;
+                font-weight: 500;
+                color: #606060;
+                margin: 0.2em 0;
+            }
+            .toggle {
+                .input {
+                    width: 90%;
+                    font-family: "Poppins", sans-serif;
+                    margin: 0;
+                    font-size: 1em;
+                    border: none;
+                    padding: 0.5em 1em;
+                    background-color: #f2f2f2;
+                    border-radius: 0.2em;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+                .error {
+                    color: red;
+                }
+            }
+            .rightLabel {
+                color: black;
+                font-weight: 600;
+                margin: 0.2em 1em 0 0;
+                word-wrap: break-word;
+                word-break: break-all;
+                font-size: 1em;
+            }
+        }
+        .subSectionHeader {
+            display: flex;
+            justify-content: space-between;
+            margin: 1em 0;
+            .heading {
+                font-family: "Poppins", sans-serif;
+                color: #000000;
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            .btn {
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                border: none;
+                color: #e26b26;
+                border-radius: 0.3em;
+                font-size: 1.2em;
+                gap: 0.5em;
+                padding: 0.3em 1em;
+
+                &:hover {
+                    background-color: #e26b262d;
+                }
+            }
+        }
+
+        .table {
+            overflow: auto;
+            border-radius: 5px;
+            outline: 2px solid #a4a4a4;
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+
+            .th {
+                outline: 2px solid #a4a4a4;
+                border-radius: 5px 5px 0 0;
+                .td {
+                    &:nth-child(1){
+                        width: 10%;
+                    }
+
+                    padding: 0.5em;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                    width: 20%;
+
+                }
+            }
+
+            .tr {
+                .td {
+                    padding: 1em 0.5em;
+                    color: #595959;
+                    font-weight: 500;
+                    .delBtn {
+                        border: none;
+                        background-color: #e26b2646;
+                        padding: 0.4em 1em;
+                        border-radius: 10px;
+                        color: rgba(0, 0, 0, 0.526);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

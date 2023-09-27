@@ -1,0 +1,43 @@
+<svg
+                                    width='36'
+                                    height='36'
+                                    viewBox='0 0 36 36'
+                                    fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    xmlnsXlink='http://www.w3.org/1999/xlink'
+                                    
+                                >
+                                    <rect
+                                        width='36'
+                                        height='36'
+                                        fill='url(#pattern0)'
+                                    />
+                                    <path
+                                        d='M7.71289 30.2144C7.92718 26.5715 8.48432 19.0286 8.9986 18.0001L15.4272 16.7144H22.4986C23.7843 16.7144 26.3557 18.0001 27.6415 19.2858C28.67 20.3144 28.4986 25.2858 28.2843 27.6429L17.3557 30.2144H7.71289Z'
+                                        fill='#707070'
+                                    />
+                                    <path
+                                        d='M13.1925 25.8887C13.1925 26.1528 13.1302 26.4019 13.0056 26.636C12.8811 26.8702 12.6818 27.062 12.4078 27.2115C12.1338 27.356 11.7825 27.4282 11.3541 27.4282H10.4124V29.5356H9.56049V24.3418H11.3541C11.7526 24.3418 12.0889 24.4115 12.3629 24.551C12.6419 24.6855 12.8487 24.8699 12.9832 25.104C13.1227 25.3382 13.1925 25.5998 13.1925 25.8887ZM11.3541 26.7332C11.6779 26.7332 11.9195 26.6609 12.079 26.5165C12.2384 26.367 12.3181 26.1578 12.3181 25.8887C12.3181 25.3208 11.9968 25.0368 11.3541 25.0368H10.4124V26.7332H11.3541ZM15.8509 24.3418C16.4039 24.3418 16.8872 24.4489 17.3007 24.6631C17.7192 24.8724 18.0405 25.1763 18.2647 25.5748C18.4939 25.9684 18.6085 26.4293 18.6085 26.9574C18.6085 27.4855 18.4939 27.9438 18.2647 28.3325C18.0405 28.7211 17.7192 29.02 17.3007 29.2292C16.8872 29.4335 16.4039 29.5356 15.8509 29.5356H14.1545V24.3418H15.8509ZM15.8509 28.8406C16.4587 28.8406 16.9245 28.6762 17.2484 28.3474C17.5722 28.0186 17.7341 27.5552 17.7341 26.9574C17.7341 26.3545 17.5722 25.8837 17.2484 25.5449C16.9245 25.2062 16.4587 25.0368 15.8509 25.0368H15.0064V28.8406H15.8509ZM22.6589 24.3418V25.0368H20.4543V26.5688H22.1731V27.2638H20.4543V29.5356H19.6023V24.3418H22.6589Z'
+                                        fill='white'
+                                    />
+                                    <defs>
+                                        <pattern
+                                            id='pattern0'
+                                            patternContentUnits='objectBoundingBox'
+                                            width='1'
+                                            height='1'
+                                        >
+                                            <use
+                                                xlinkHref='#image0_1071_2675'
+                                                transform='scale(0.01)'
+                                                
+                                            />
+                                        </pattern>
+                                        <image
+                                            id='image0_1071_2675'
+                                            width='100'
+                                            height='100'
+                                            xlinkHref='data:image/png;base64,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'
+                                        />
+                                    </defs>
+                                </svg>

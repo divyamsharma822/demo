@@ -1,0 +1,129 @@
+.table {
+    font-size: 1.2vmax;
+    border: none;
+    thead {
+        background-color: transparent;
+        color: black;
+    }
+    tbody {
+        background-color: transparent;
+
+    }
+}
+
+.svg {
+    height: 20%;
+}
+
+.history-header {
+    display: flex;
+    font-size: 1.2vmax;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    .history-left {
+        display: flex;
+        flex-direction: row;
+
+        .history-grp {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        button {
+            background-color: transparent;
+            color: rgb(165, 165, 165);
+            padding: 0.5rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.103);
+            }
+            @media only screen and (max-width: 600px) {
+                border-radius: 0;
+                background-color: transparent;
+                margin: -2px;
+
+                &:hover {
+                    background-color: transparent;
+                    color: rgb(206, 100, 34);
+                    border-bottom: 2px solid rgb(206, 100, 34);
+                }
+            }
+        }
+        button:nth-child(3) {
+            background-color: rgb(243, 155, 62);
+            color: white;
+            font-weight: 600;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            &:hover {
+                background-color: rgba(243, 156, 62, 0.671);
+            }
+            @media only screen and (max-width: 576px) {
+                border-radius: 0;
+                background-color: transparent;
+                margin: -2px;
+                color: rgb(206, 100, 34);
+                border-bottom: 2px solid rgb(206, 100, 34);
+                &:hover {
+                    background-color: transparent;
+                    color: rgb(206, 100, 34);
+                    border-bottom: 2px solid rgb(206, 100, 34);
+                }
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            .history-grp {
+                display: flex;
+
+                justify-content: space-between;
+                align-items: center;
+                flex: 0.8;
+                border-bottom: 2px solid rgb(208, 208, 208);
+            }
+        }
+    }
+    .history-right {
+        display: flex;
+        .history-header-button {
+            background-color: rgb(226, 107, 52);
+            color: white;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: rgba(243, 156, 62, 0.671);
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            flex: 1;
+            justify-content: center;
+
+            .history-header-button {
+                width: 85%;
+                font-size: 2vmax;
+                height: 2.8rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

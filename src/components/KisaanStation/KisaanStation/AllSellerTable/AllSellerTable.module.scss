@@ -1,0 +1,28 @@
+.btnActive {
+    background-color: #ebf5ed;
+    color: #3a974c;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.btnInActive {
+    background-color: #F1F1F1;
+    color: #777777;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.btnPending{
+    background-color: #FEF5EC;
+    color: #F29339;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.btnRejected{
+    background-color: #FDEAEA;
+    color: #E22626;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 20px;
+    text-decoration: none;
+}

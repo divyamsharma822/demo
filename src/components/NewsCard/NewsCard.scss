@@ -1,0 +1,62 @@
+.news-card {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 5px;
+    flex: 1 0 25%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    flex-direction: column;
+
+    .image-button {
+        
+        display: flex;
+        justify-content: space-between;
+        img {
+            object-fit: cover;
+            height: 11vmin;
+            width: 11vmin;
+            border-radius: 10px;
+        }
+        button {
+            color: rgb(69,69,69);
+            height: auto;
+            border: none;
+            background-color: transparent;
+            &:hover{
+                border-radius: 2px;
+            }
+        }
+    }
+    .title {
+        display: flex;
+        padding-top: 0.5rem;
+        flex-wrap: wrap;
+        word-break: break-all;
+    }
+    .lastupdated {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgb(150, 150, 150);
+    }
+    /* For extremely small screen devices (595px and below) */
+    @media only screen and (max-width: 600px) {
+        font-size: 0.7rem;
+        
+    }
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 600px) {
+        font-size: 0.9rem;
+    }
+
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 1440px) {
+        font-size: 1rem;
+    }
+
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 1800px) {
+        font-size: 1.6rem;
+    }
+}
+

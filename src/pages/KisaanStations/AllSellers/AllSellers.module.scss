@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.kisaanStations {
+    height: 100vh;
+    overflow: auto;
+    font-family: Poppins;
+    font-size: 16px;
+
+    @media (min-width: 1960px) {
+        font-size: calc(14px + 0.4vw);
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+
+    .content {
+        .navbar {
+            background-color: #ffffff;
+            color: rgb(86, 62, 31);
+            height: 7vh;
+            font-weight: 500;
+            padding: 1em;
+        }
+
+        .middlebar {
+            background-color: rgb(249, 241, 229);
+            display: flex;
+            font-size: 1em;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            padding: 0.6em;
+            gap: 1rem;
+            align-items: center;
+            margin: 1rem 0;
+            overflow: auto;
+            flex-grow: 5vw;
+            @media (max-width: 768px) {
+                justify-content: flex-start;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                & > * {
+                    flex: 1;
+                    flex-grow: 1;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .activemiddlebar {
+                cursor: pointer;
+                font-family: Poppins;
+                padding: 0.6rem;
+                font-weight: 500;
+                width: fit-content;
+                background-color: rgb(244, 163, 64);
+                border-radius: 8px;
+                color: white;
+                width: max-content;
+                flex-grow: 0.15;
+                transition-duration: 0.5s;
+                transition-property: "background-color";
+                &:active {
+                    color: rgb(249, 241, 229);
+                }
+                @media (max-width: 768px) {
+                    flex-grow: 0.5;
+                }
+            }
+            .button {
+                cursor: pointer;
+                font-family: Poppins;
+                color: rgb(86, 62, 31);
+                width: fit-content;
+                padding: 0.6rem;
+                font-weight: 500;
+                border-radius: 8px;
+                width: max-content;
+                flex-grow: 0.15;
+                &:hover {
+                    background-color: rgba(205, 205, 205, 0.204);
+                    border-radius: 8px;
+                }
+                @media (max-width: 768px) {
+                    flex-grow: 0.5;
+                }
+            }
+            .search {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                border: 0.2px solid #c8652b82;
+                gap: 1rem;
+                border-radius: 0.5rem;
+                background-color: rgb(255, 255, 255) !important;
+
+                @media (max-width: 768px) {
+                    justify-content: flex-start;
+                    width: 100%;
+                }
+
+                .input {
+                    width: 100%;
+                    min-width: 15vw;
+                    border: none;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    transition: 0.5s;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.krishiBazaarTable {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-family: poppins;
+    color: rgb(135, 118, 116);
+    font-size: 1em;
+
+    .table {
+        overflow: hidden;
+        border-collapse: separate;
+        border-spacing: 0 1em;
+        table-layout: fixed;
+        width: 100%;
+        th {
+            padding: 0 0 1em 1em;
+        }
+    }
+
+    .krishiBazaar-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,38 @@
+.active {
+    height: 6vh;
+    padding-left: 1em;
+    justify-content: center;
+    display: flex;
+    font-size: 0.8em;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(226, 107, 52);
+    font-weight: 600;
+    cursor: pointer;
+    fill: white;
+    
+    &:hover {
+        color: rgb(226, 107, 52);
+    }
+}
+.li {
+    font-size: 0.8em;
+    height: 6vh;
+    padding-left: 1em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(166, 164, 164);
+    font-weight: 500;
+    cursor: pointer;
+    fill: rgb(166, 164, 164);
+
+    &:hover {
+        background-color: rgba(208, 208, 208, 0.339);
+        color: rgb(166, 164, 164);
+    }
+}

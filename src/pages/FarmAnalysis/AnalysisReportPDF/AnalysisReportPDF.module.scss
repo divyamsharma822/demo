@@ -1,0 +1,24 @@
+.AnalysisReportPDF {
+    .content {
+        .navbar {
+            background-color: white;
+            color: rgb(86, 62, 31);
+            height: 7vh;
+            font-weight: 500;
+            padding: 1rem;
+
+            .navtext {
+                font-weight: 500;
+            }
+            @media (max-width: 576px) {
+                font-size: 0.6em;
+            }
+        }
+
+        .pdf {
+            .ref {
+              
+            }
+        }
+    }
+}

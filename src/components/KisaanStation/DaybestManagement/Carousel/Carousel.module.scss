@@ -1,0 +1,22 @@
+.Carousel {
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    height: calc(60px + 1vw);
+    width: calc(60px + 1vw);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carouselInner {
+        white-space: nowrap;
+        transition: ease 1s;
+        height: 100%;
+        overflow: hidden;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

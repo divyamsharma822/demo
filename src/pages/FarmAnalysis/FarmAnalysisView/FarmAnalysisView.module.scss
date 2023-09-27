@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+.FarmAnalysisView {
+    height: 100vh;
+    overflow: auto;
+    font-family: Poppins;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar {
+        background-color: white;
+        color: rgb(86, 62, 31);
+        height: 7vh;
+        font-weight: 500;
+        padding: 1rem;
+
+        .navtext {
+            font-weight: 500;
+        }
+        @media (max-width: 576px) {
+            font-size: 0.6em;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 8px;
+        height: auto;
+        margin: 1vmax;
+        font-size: 1rem;
+        padding: 1vmax;
+        @media (max-width: 576px) {
+            font-size: 0.8em;
+        }
+
+        .top {
+            width: 100%;
+
+            .topleft {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: left;
+
+                .id {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #563e1f;
+                    @media (max-width: 576px) {
+                        font-size: 1.2em;
+                    }
+
+                    .Pending {
+                        color: #e26b26;
+                        background-color: rgb(254, 244, 235);
+                        font-weight: 500;
+                        border-radius: 20px;
+                        padding: 2px 7px 2px 7px;
+                        font-size: 0.8rem;
+                    }
+                    .Completed {
+                        color: rgb(68, 152, 77);
+                        background-color: rgb(235, 245, 237);
+                        font-weight: 500;
+                        border-radius: 20px;
+                        padding: 2px 7px 2px 7px;
+                        font-size: 0.8rem;
+                    }
+                    .Cancelled {
+                        color: rgb(237, 56, 51);
+                        background-color: rgb(252, 233, 233);
+                        font-weight: 500;
+                        border-radius: 20px;
+                        padding: 2px 7px 2px 7px;
+                        font-size: 0.8rem;
+                    }
+                }
+                .servicename {
+                    color: #626262;
+                }
+            }
+            .topright {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: right;
+                @media (max-width: 576px) {
+                    font-size: 1em;
+                    text-align: left;
+                }
+
+                .requestedon {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #200e32;
+                    @media (max-width: 576px) {
+                        font-size: 1.2em;
+                        padding-top: 1rem;
+                        text-align: left;
+                    }
+                }
+
+                .time {
+                    color: #8c8c8c;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 8px;
+        height: auto;
+        margin: 1vmax;
+        font-size: 1rem;
+        padding: 1vmax;
+        @media (max-width: 576px) {
+            font-size: 0.8em;
+        }
+        .heading {
+            color: black;
+            padding: 0 0 1rem 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .hr {
+            border: 0.1px solid rgba(128, 128, 128, 0.143);
+        }
+        .tweks {
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+            }
+        }
+        .innerheading {
+            color: #8c8c8c;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.2rem 0;
+            height: min-content;
+            @media (max-width: 768px) {
+                font-size: 1em;
+            }
+        }
+        .innertext {
+            color: #563f1f;
+            font-size: 0.9rem;
+            padding: 0.2rem 0;
+            font-weight: 500;
+            @media (max-width: 768px) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .cancelButton {
+            font-weight: 600;
+            font-family: Poppins;
+            flex-basis: 10vw;
+            border: 1px solid rgb(124, 124, 124);
+            padding: 1rem 2.2rem 1rem 2.2rem;
+            border-radius: 8px;
+            color: rgb(124, 124, 124);
+            background-color: transparent;
+
+            &:hover {
+                transform: scale(0.95);
+            }
+            @media (max-width: 576px) {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+
+        .rejectButton {
+            font-weight: 600;
+            font-family: Poppins;
+            flex: 0.15;
+            border: 1px solid rgb(219, 78, 90);
+            padding: 1rem 2.2rem 1rem 2.2rem;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(219, 78, 90);
+
+            &:hover {
+                transform: scale(0.95);
+            }
+            @media (max-width: 576px) {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+
+        .approveButton {
+            font-weight: 600;
+            font-family: Poppins;
+            flex: 0.15;
+            border: 1px solid rgb(68, 152, 77);
+            padding: 1rem 2.2rem 1rem 2.2rem;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(68, 152, 77);
+
+            &:hover {
+                transform: scale(0.95);
+            }
+            @media (max-width: 576px) {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+
+        .subrow {
+            width: 40vw;
+            justify-content: right;
+            @media (max-width: 576px) {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+.toggle {
+    font-size: 1rem;
+}
+
+.rejectMessageDialog {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(129, 129, 129, 0.519);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    .rejectMessageDialoginfo {
+        box-shadow: 2px 2px 7px 0px rgba(85, 85, 85, 0.75);
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        background-color: white;
+        top: 45%;
+        height: min-content;
+        font-size: 1.2vmax;
+        width: 50vmin;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        span {
+            text-align: center;
+            font-family: "Poppins";
+            font-weight: 500;
+        }
+        textarea {
+            border: none;
+            font-size: 1vmax;
+            background-color: rgb(245, 245, 245);
+            padding: 1rem;
+            resize: none;
+            border-radius: 10px;
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+        .rejectMessageDialogbuttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .rejectMessageDialogbutton {
+                &:nth-child(1) {
+                    background-color: rgb(221, 221, 221);
+                    border-radius: 20px;
+                    padding: 0.4rem 1rem 0.4rem 1rem;
+                    color: rgb(129, 129, 129);
+                    flex: 0.2;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(0.95);
+                    }
+                }
+                &:nth-child(2) {
+                    background-color: rgb(226, 107, 52);
+                    border-radius: 20px;
+                    padding: 0.4rem 1rem 0.4rem 1rem;
+                    flex: 0.2;
+                    color: white;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.Carousel{
+    margin: 1em auto 0 auto;
+    overflow-x: scroll;
+    position: relative;
+    height: 30vh;
+    .carouselInner{
+        white-space: nowrap;
+        transition: ease 1s;
+        height: 100%;
+    }
+}
+

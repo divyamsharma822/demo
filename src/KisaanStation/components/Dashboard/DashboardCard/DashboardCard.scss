@@ -1,0 +1,104 @@
+.card {
+    font-family: Poppins;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 45%;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .card-body {
+        div {
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            justify-content: space-between;
+
+            .dashboard-icon {
+                background-color: rgb(226, 107, 52);
+                padding: 1.3rem;
+                font-size: 1em;
+                height: min-content;
+                display: flex;
+                margin-top: -40px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+
+            .dashboardCard-card-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .dashboardCard-title {
+                    font-size: 0.8rem;
+                    text-align: right;
+                }
+                .dashboardCard-number {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+            }
+        }
+        .hr {
+            margin: 1rem 0 0.5rem 0;
+            border: 0.1px solid rgb(240, 242, 245);
+            margin-left: -15px;
+            display: flex;
+            align-self: flex-end;
+            margin-right: -15px;
+        }
+        .dashboardCard-change {
+            font-size: 0.8rem;
+        }
+    }
+
+    &:hover {
+        scale: 0.97;
+    }
+}
+
+@media (min-width: 870px) {
+    .card {
+        flex: 1;
+        justify-content: center;
+        font-size: 1.2vmax;
+
+        .card-body {
+            div {
+                display: flex;
+                flex-direction: row;
+                font-size: 1vmax;
+                justify-content: space-between;
+
+                .dashboard-icon {
+                    background-color: rgb(226, 107, 52);
+                    padding: 1.3rem;
+                    font-size: 1vmax;
+                    height: min-content;
+                    display: flex;
+                    margin-top: -40px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                }
+
+                .dashboardCard-card-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    .dashboardCard-title {
+                        font-size: 0.8vmax;
+                        text-align: right;
+                        // word-break: break-all;
+                        // word-wrap: break-word;
+                    }
+                }
+            }
+            .dashboardCard-change {
+                font-size: 1vmax;
+            }
+        }
+    }
+}

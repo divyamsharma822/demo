@@ -1,0 +1,43 @@
+.CarouselControls {
+    display: flex;
+    justify-content: space-between;
+
+    .CarouselControl {
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        position: absolute;
+        height: 50px;
+        width: 70px;
+        top: calc(50% - 25px);
+        color: #f3f3f3;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .left {
+        left: 0;
+        .svg {
+            background-color: rgba(158, 158, 158, 0.603);
+            border-radius: 50%;
+        }
+    }
+
+    .middle {
+        top: 0;
+        right: 0;
+        .svg {
+            background-color: transparent;
+            fill: rgba(87, 87, 87, 0.603);
+            mix-blend-mode: difference;
+        }
+    }
+
+    .right {
+        right: 0;
+        .svg {
+            background-color: rgba(158, 158, 158, 0.603);
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.FarmAnalysis {
+    height: 100vh;
+    overflow: auto;
+    font-family: Poppins;
+    font-size: 16px;
+
+    @media (min-width: 1960px) {
+        font-size: calc(14px + 0.4vw);
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
+    @media (max-width: 576px) {
+        font-size: 12px;
+    }
+
+    .content {
+        .navbar {
+            background-color: #ffffff;
+            color: rgb(86, 62, 31);
+            height: 7vh;
+            font-weight: 500;
+            padding: 1rem;
+        }
+
+        .middlebar {
+            display: flex;
+            font-size: 5em;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 20%; 
+        }
+    }
+}

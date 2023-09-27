@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+.tr {
+    border: 1px solid #e2e2e2;
+
+    th {
+        font-weight: 600 !important;
+        padding: 0.7em 0.5em;
+        background-color: #e8f6ff;
+        color: #055181;
+    }
+
+    td {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        padding: 1em 0.5em;
+        // overflow: hidden;
+    
+        // // background-color: #0374ba;
+        // text-overflow: ellipsis;
+
+        &:last-child {
+            padding-right: 2em;
+        }
+        &:first-child {
+            padding-left: 2em;
+        }
+        .btnActive{
+            background-color: #A6E3D8;
+            color: #257062;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btnInstore{
+            background-color: #FFF2DF;
+            color: white;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btnDamaged{
+            background-color: #FFD4DF;
+            color: #C71A44;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btnWorking{
+            background-color: rgb(169, 187, 90);
+            color: white;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btnOnsite{
+            background-color: #ECFFCD;
+            color: #7FAF33;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btnRepairing{
+            background-color: #FFEFE5;
+            color:#E26A26;
+            padding: 0.4em 1em 0.4em 1em;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .viewBtn {
+            border-radius: 50px;
+            border: 1px solid #0374ba;
+            color: #0374ba;
+            font-weight: 400;
+            min-width: fit-content;
+            width: 5em;
+            text-align: center;
+            padding: 0.3em 0.5em;
+            cursor: pointer;
+        }
+    }
+}

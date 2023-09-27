@@ -1,0 +1,53 @@
+.icon {
+    color: rgb(86, 62, 31);
+    @media (min-width: 576px) {
+        display: none;
+    }
+}
+.sidebar {
+    background-color: white !important;
+    font-family: Poppins;
+    // min-height: -webkit-fill-available;
+
+    .sidebarHeader {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: min-content;
+        flex-direction: column;
+
+        .img {
+            background-color: rgb(226, 107, 52);
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            display: block;
+            max-width: 40%;
+            height: auto;
+        }
+
+        .headerText {
+            color: rgb(226, 107, 52);
+            margin: 1rem;
+            font-size: 2vmax;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    .sidebarList {
+        
+
+        .ul {
+            margin-top: 1rem;
+            list-style-type: none;
+            margin-right: 0.5rem;
+            flex-direction: column;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+
+            .dropdown {
+                margin-top: 5px;
+            }
+        }
+    }
+}

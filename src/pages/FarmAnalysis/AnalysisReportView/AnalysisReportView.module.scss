@@ -1,0 +1,75 @@
+.AnalysisReportView {
+    height: 100vh;
+    overflow: auto;
+    font-family: Poppins;
+    font-size: 16px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (min-width: 1960px) {
+        font-size: calc(14px + 0.4vw);
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+
+    .content {
+        .navbar {
+            background-color: white;
+            color: rgb(86, 62, 31);
+            height: 7vh;
+            font-weight: 500;
+            padding: 1rem;
+
+            .navtext {
+                font-weight: 500;
+            }
+            @media (max-width: 576px) {
+                font-size: 0.6em;
+            }
+        }
+
+        .sections {
+            margin: 1em;
+            background-color: white;
+            border-radius: 8px;
+
+            .header {
+                padding: 1em;
+                min-width: fit-content;
+
+                .heading {
+                    font-weight: 600;
+                    font-size: 1.5em;
+                }
+                .date {
+                    font-weight: 500;
+                    font-size: 1em;
+                    margin-top: 1em;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                    .saveBtn {
+                        background-color: #e26b26;
+                        padding: 0.3em 0.5em;
+                        border: none;
+                        border-radius: 8px;
+                        margin-left: 0.5em;
+                        color: white;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .hr {
+                border: 1px solid #a0a0a05e;
+                margin: 0 0 1em 0;
+            }
+        }
+    }
+}

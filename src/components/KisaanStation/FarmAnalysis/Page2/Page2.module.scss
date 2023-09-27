@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.Page2 {
+    height: 297mm;
+    width: 210mm;
+    border: 1px solid rgb(139, 139, 139);
+    background-color: white;
+    padding: 40px;
+
+    @media print {
+        page-break-after: always;
+    }
+    .topleft {
+        background-color: #e26b26;
+        padding: 20px;
+        width: 55%;
+        height: 140px;
+        border-radius: 12px;
+        color: white;
+
+        .heading {
+            font-size: 30px;
+            padding-bottom: 20px;
+            text-decoration: solid underline rgb(255, 255, 255) 4px;
+            font-weight: 600;
+            text-underline-offset: 10px;
+        }
+        .area {
+            white-space: pre;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+
+    .topright {
+        background-color: #fff3d7;
+        border-radius: 12px;
+        width: 43%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        gap: 6px;
+        white-space: pre;
+        font-size: 18px;
+    }
+    .middle {
+        background-color: #f0f0f0;
+        padding: 20px 40px 20px 40px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        border-radius: 12px;
+
+        .left {
+            font-weight: 500;
+        }
+        .right {
+            font-weight: 600;
+        }
+    }
+    .bottom {
+        .head {
+            text-align: left;
+            color: #e26b26;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .table {
+            width: 100%;
+            table-layout: auto;
+
+            .tr {
+                .th {
+                    padding: 10px 0;
+                    border-bottom: 2px solid #d1d1d1;
+                    font-weight: 600 !important;
+                    font-weight: 12px;
+                }
+            }
+
+            tbody {
+                .td {
+                    padding: 10px 0;
+                    color: #595959;
+                }
+            }
+        }
+    }
+}
