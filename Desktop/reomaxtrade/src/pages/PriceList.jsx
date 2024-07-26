@@ -116,20 +116,18 @@ const PriceList = () => {
         },
     });
 
-    if (isLoading || isFetching) return <div>Loading...</div>;
-
     if (cryptoList?.result?.length === 0) {
         return <div className="text-center text-black">No data found.</div>;
     }
 
     return (
         <section className="relative bg-[#141923]">
-            <div className="relative container flex flex-col justify-center items-center gap-4 h-full z-20 my-10">
+            <div className="relative px-2 md:container flex flex-col justify-center items-center gap-4 h-full z-20 my-10">
                 <h3 className="flex items-center gap-3 text-gold" data-aos="fade-up">
                     <LOGO className="animate-spin" />
                     Reo Max Coin
                 </h3>
-                <h1 className="max-w-[1000px] text-[30px] md:text-[50px] lg:text-[50px] leading-tight text-white font-bold text-balance text-center flex flex-wrap justify-center gap-1">
+                <h1 className="max-w-[1000px] text-[25px] md:text-[50px] lg:text-[50px] leading-tight text-white font-bold text-balance text-center flex flex-wrap justify-center gap-1 mb-10">
                     All Cryptocurrencies
                 </h1>
 
@@ -164,7 +162,7 @@ const PriceList = () => {
                                                 <td
                                                     key={cell.id}
                                                     className={`py-2 px-4 min-w-[100px] whitespace-nowrap ${cell.column.columnDef.meta?.align === 'left' ? 'text-left' : 'text-right'} ${
-                                                        cell.column.id === 'serial_no' ? 'sticky left-0 bg-[#141923]' : ''
+                                                        cell.column.id === 'name' ? 'sticky left-0 bg-[#141923]' : ''
                                                     }`}
                                                 >
                                                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
